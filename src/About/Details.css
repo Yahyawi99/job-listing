@@ -1,0 +1,92 @@
+/* Details */
+.details-container {
+  width: 95%;
+  max-width: 800px;
+  background-color: var(--form-background);
+  color: var(--clr-grey-4);
+  margin-top: 30px;
+  padding: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 8px;
+}
+.details-container h3 {
+  color: var(--input-clr);
+  margin: 40px 0px 20px 0px;
+}
+.details-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 20px;
+}
+
+/* Created time and contract type */
+.date-and-contract {
+  display: flex;
+  gap: 10px;
+  color: var(--clr-grey-5);
+  margin-bottom: 5px;
+}
+
+/* Apply Now Section */
+.apply-now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.apply-now h1 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: var(--input-clr);
+}
+.apply-now p {
+  font-weight: 600;
+  color: var(--clr-primary-4);
+}
+.apply-now-btn {
+  color: var(--clr-white);
+  background-color: var(--clr-primary-4);
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.apply-now-btn:hover {
+  background-color: var(--clr-primary-6);
+}
+
+/* requirements */
+.requirements-content {
+  margin-bottom: 20px;
+}
+
+/* role-content */
+.role-content {
+  margin-bottom: 20px;
+}
+
+/* ============== */
+/* Media query */
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  /* Details */
+  .details-container {
+    padding: 15px;
+  }
+
+  /* Apply btn */
+  .apply-now {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .apply-now-btn {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+  }
+}
